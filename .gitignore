@@ -32,10 +32,6 @@ runs/
 weights/
 **/runs/
 **/weights/
-dataset/
-**/dataset/
-**/datasets/
-**/dataset-cache/
 *.cache
 *.onnx
 
@@ -50,12 +46,6 @@ build/
 **/dist/
 **/build/
 
-# Uploaded assets (keep folder structure)
-uploads/*
-!uploads/.gitkeep
-backend/uploads/*
-!backend/uploads/.gitkeep
-!backend/uploads/products/.gitkeep
 
 # Editors
 .vscode/
