@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Environment and secrets (CRITICAL: Never commit .env files)
+.env
+.env.*
+*.env
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+
+# Node.js logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Python environments and caches
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Machine-learning artifacts & datasets
+runs/
+weights/
+**/runs/
+**/weights/
+dataset/
+**/dataset/
+**/datasets/
+**/dataset-cache/
+*.cache
+*.onnx
+
+# Allow lightweight production model weights (5.4MB)
+*.pt
+!ai-model/best.pt
+!best.pt
+
+# Frontend build output
+dist/
+build/
+**/dist/
+**/build/
+
+# Uploaded assets (keep folder structure)
+uploads/*
+!uploads/.gitkeep
+backend/uploads/*
+!backend/uploads/.gitkeep
+!backend/uploads/products/.gitkeep
+
+# Editors
+.vscode/
+.idea/
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*.bak

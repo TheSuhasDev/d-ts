@@ -1,0 +1,48 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "seed:users": "node src/seedUsers.js",
+    "seed:demo-movements": "node src/seedMovements.js",
+    "seed:realistic": "node src/seedRealisticData.js",
+    "migrate:invoices": "node src/migrations/assignUniqueInvoiceNumbers.js",
+    "migrate:dispatch-movements": "node src/migrations/backfillDispatchMovements.js",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^2.30.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "express-mongo-sanitize": "^2.2.0",
+    "express-rate-limit": "^8.7.1",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.10.4",
+    "multer": "^2.5.0",
+    "node-cron": "^4.6.0",
+    "pdfkit": "^0.20.2",
+    "pino": "^10.4.0",
+    "pino-pretty": "^13.2.0",
+    "qrcode": "^1.5.4",
+    "sharp": "^0.35.5",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "eslint": "^10.12.0",
+    "jest": "^30.5.2",
+    "nodemon": "^3.1.14",
+    "supertest": "^7.3.1"
+  }
+}
